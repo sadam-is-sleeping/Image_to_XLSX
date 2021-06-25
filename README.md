@@ -5,7 +5,7 @@ Image to XLSX (100x100) script. Seriously useless and meaningless.
 - NumPy
 - OpenXL
 - format.xlsx
-- ... and any image!
+- ... and any image!  
 Had to prepare format.xlsx because file size dramatically increased when format file was created by script
 ## Features
 - Auto resizing and center aligning
