@@ -1,11 +1,16 @@
 import openpyxl as xl
 from PIL import Image
 import numpy as np
+from sys import argv
 
-image_path = 'file.png'
+# Default
+image_path = 'chrome-logo.png'
 
-#img = np.array(Image.open(image_path))
+if (len(argv) - 1):
+    print(argv[1])
+
 # Transparency Issue
+# img = np.array(Image.open(image_path))
 png = Image.open(image_path).convert(mode='RGBA')
 imgsize = png.size
 bg = Image.new('RGB', [max(imgsize)]*2, (255, 255, 255))
